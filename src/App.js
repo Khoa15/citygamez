@@ -44,7 +44,7 @@ function App() {
           <Route exact path={`${state.client}/`} element={<Login />} />
           <Route exact path={`${state.client}/game`} element={<Board />} />
           <Route exact path={`${state.client}/register`} element={<Register />} />
-          <Route exact path='/*'/>
+          <Route exact path='/*' element={<h1>The site not found</h1>}/>
         </Routes>
       </AppContext.Provider>
     </BrowserRouter>

@@ -85,5 +85,44 @@ body{
 }
 
 .ico{
-    width: 90%
+    width: 90%!important;
+    height: 90%!important;
+}
+
+.Navbar{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 700px;
+    background-color: #487eb0;
+    height: 30px;
+    border-bottom-left-radius: 10px;
+}
+.navbar-brand{
+    display: flex!important;
+}
+.nav-item{
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px
+}
+.nav-item > svg{
+    width: 20px;
+    opacity: 0.5;
+}
+@media(max-width: 800px){
+    .nav-item{
+        font-size: 13px
+    }
+    .Navbar{
+        top:unset;
+        bottom:0;
+        height: 22px;
+        width:100%;
+        border-radius: unset;
+    }
 }

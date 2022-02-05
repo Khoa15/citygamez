@@ -23,7 +23,7 @@ export default function Login(){
             const response = await axios(option)
             if(response.data.success){
                 localStorage.setItem('token', response.data.accessToken)
-                navigate(`${state.client}/`)
+                navigate(`${state.client}/board`)
             }
         } catch (error) {
             setErrorMessage(error.response.data.message)
