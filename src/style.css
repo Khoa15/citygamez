@@ -1,0 +1,89 @@
+*{padding: 0; margin:0}
+:root{
+    font-family: 'Arial';
+}
+
+body{
+    background-color: #34495e;
+}
+
+.game{
+    display: flex;
+    flex-direction: row;
+}
+
+.board{
+    width: 1000px;
+    /* max-height: 800px; */
+    /* overflow-y: auto; */
+    margin: 10px auto 10px ;
+    border: 1px solid #ddd
+}
+
+.square{
+    /*  */
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border:unset;
+    outline: none;
+    float: left;
+    cursor:pointer
+}
+
+.square:hover{
+    border: 1px solid #ddd;
+}
+
+@media(max-width: 1000px){
+    .board{
+        width: 750px;
+    }
+    .square{
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media(max-width: 800px){
+    .board{
+        width: 600px;
+    }
+    .square{
+        width: 31px;
+        height: 31px;
+    }
+}
+@media(max-width: 700px){
+    .board{
+        width: 375px;
+    }
+    .square{
+        width: 19.7px;
+        height: 19.7px;
+    }
+}
+@media(max-width: 500px){
+    .board{
+        width: 375px;
+    }
+    .square{
+        width: 19.7px;
+        height: 19.7px;
+        margin-left:-0.1px;
+        margin-top:-0.1px;
+    }
+}
+@media(max-width: 400px){
+    .board{
+        width: 300px;
+    }
+    .square{
+        width: 15.1px;
+        height: 15.1px;
+    }
+}
+
+.ico{
+    width: 90%
+}
