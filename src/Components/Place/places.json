@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Ponds",
+        "level":1,
+        "resource":{
+            "coefficient": 0.1,
+            "food": 1,
+            "energy":0,
+            "labor":0,
+            "gold":0,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 0
+    },
+    {
+        "id": 2,
+        "name": "Gold",
+        "level":1,
+        "resource":{
+            "coefficient": 0.1,
+            "food": 0,
+            "energy":0,
+            "labor":0,
+            "gold":1,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 0
+    },
+    {
+        "id": 3,
+        "name": "Factory",
+        "level":1,
+        "resource":{
+            "coefficient": 0.1,
+            "food": 0,
+            "energy":1,
+            "labor":0,
+            "gold":0,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 0
+    },
+    {
+        "id": 4,
+        "name": "Lake",
+        "level":1,
+        "resource":{
+            "coefficient": 0.1,
+            "food": 0,
+            "energy":0.1,
+            "labor":0,
+            "gold":0,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 1
+    },
+    {
+        "id": 5,
+        "name": "Lava",
+        "level":1,
+        "resource":{
+            "coefficient": 0.2,
+            "food": 0,
+            "energy":2,
+            "labor":0,
+            "gold":0,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 1
+    },
+    {
+        "id": 6,
+        "name": "Military Barracks",
+        "level":1,
+        "resource":{
+            "coefficient": 0.01,
+            "food": 0,
+            "energy":0,
+            "labor":0,
+            "gold":0,
+            "gem":0,
+            "army":0.1
+        },
+        "typeObject": 0
+    },
+    {
+        "id": 7,
+        "name": "Trash",
+        "level":1,
+        "resource":{
+            "coefficient": 0.1,
+            "food": 0.1,
+            "energy":0.1,
+            "labor":0,
+            "gold":0.1,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 1
+    },
+    {
+        "id": 8,
+        "name": "Treasure",
+        "level":1,
+        "resource":{
+            "coefficient": 0,
+            "food": 0.1,
+            "energy":0.1,
+            "labor":0,
+            "gold":0.1,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 1
+    },
+    {
+        "id": 9,
+        "name": "Castle",
+        "level":1,
+        "resource":{
+            "coefficient": 0.1,
+            "food": 0,
+            "energy":0,
+            "labor":0,
+            "gold":0,
+            "gem":0,
+            "army":0
+        },
+        "typeObject": 1
+    }
+]

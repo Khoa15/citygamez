@@ -126,3 +126,7 @@ body{
         border-radius: unset;
     }
 }
+
+.pointer{
+    cursor: pointer!important;
+}

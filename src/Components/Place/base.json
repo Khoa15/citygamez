@@ -1,0 +1,25 @@
+[
+    {
+        "_id": "",
+        "name": "",
+        "level": 0,
+        "resource": {
+            "_id": "",
+            "food": 0,
+            "energy": 0,
+            "gold": 0,
+            "gem": 0,
+            "labor": 0,
+            "army": 0,
+            "coefficient": 0,
+            "typeObject": 0,
+            "__v": 0
+        },
+        "position": {
+            "_id": "",
+            "pos": 0,
+            "mapel": 0,
+            "type": 0
+        }
+    }
+]

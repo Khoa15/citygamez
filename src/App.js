@@ -8,11 +8,11 @@ import Login from './Components/Login'
 import Register from './Components/Register'
 import AppContext from './Components/AppContext'
 function App() {
-  window.addEventListener("beforeunload", (ev) => 
-  {  
-      ev.preventDefault();
-      return ev.returnValue;
+  window.addEventListener("beforeunload", function (e) {
+    e.preventDefault()
+    return e.returnValue = "Are you sure want to exit";
   });
+  
   const initialState = {user: null, place: null, client:'', server:'http://localhost:5000', token: `Bearer `+localStorage.getItem('token')}
   const [state, dispatch] = useReducer(AppReducer, initialState)
   const checkCurrentUser = useCallback(async()=>{
@@ -42,7 +42,7 @@ function App() {
       <AppContext.Provider value={{state, dispatch}}>
         <Routes>
           <Route exact path={`${state.client}/`} element={<Login />} />
-          <Route exact path={`${state.client}/game`} element={<Board />} />
+          <Route exact path={`${state.client}/game/:placeId`} element={<Board />} />
           <Route exact path={`${state.client}/register`} element={<Register />} />
           <Route exact path='/*' element={<h1>The site not found</h1>}/>
         </Routes>
