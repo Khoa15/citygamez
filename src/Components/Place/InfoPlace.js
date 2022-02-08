@@ -12,7 +12,7 @@ export default function InfoPlace(props){
                             props.info && (
                             <>
                                 <ItemInfoPlace name="Name" value={props.info.name} />
-                                <ItemInfoPlace name="Level" value={props.info.level+1} upLevel={props.upLevel} inUpLevel={props.inUpLevel} />
+                                <ItemInfoPlace name="Level" value={props.info.level} upLevel={props.upLevel} inUpLevel={props.inUpLevel} />
                                 {props.info.resource&&(<ItemInfoPlace name="Productive" value={props.info.resource.coefficient} />)}
                                 {props.info.resource && (
                                     <>

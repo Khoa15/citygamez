@@ -103,11 +103,13 @@ body{
 }
 .nav-item{
     width: 100px;
-    text-overflow: ellipsis;
-    overflow: hidden;
     display: flex;
     align-items: center;
     margin-right: 10px;
+}
+.nav-value{
+    text-overflow: ellipsis;
+    overflow: hidden;
     font-size: 14px
 }
 .nav-item > svg{

@@ -43,15 +43,18 @@ function Place(){
         const placeAdded = dataPlace.filter(r=>r.id===i)[0],
         index = mapel.filter(r=>r.position.mapel===0).length
         hash(mapel[mapel.length-1]._id, 1).then((res)=>{
+            const g_res = resource
             const newPlace = {...placeAdded,_id:res, position:{mapel:0, pos: index}, resource:{...placeAdded.resource, typeObject: i}}
             setMapel([...mapel, newPlace])
             axios({
-                method:'',
-                url:`${state.server}/`,
+                method:'post',
+                url:`${state.server}/api/place/user`,
                 headers:{
                     Authorization: state.token
                 },
-                data: newPlace
+                data: {...newPlace, g_resource: g_res}
+            }).then((res)=>{
+                console.log(res.data.data)
             })
         })
     }
@@ -65,7 +68,7 @@ function Place(){
                     item = place
                     items[index] = item
                     setMapel(items)
-            }, 100)
+            }, 50)
             return () => clearInterval(interval)
         }
     })
